@@ -1,8 +1,10 @@
-package by.train.task3.main;
+package Epam.by.task3.main;
 
 import java.util.Scanner;
 
-public class First{
+// Составить программу нахождения наименьшего из квадратов двух чисел а и b.
+
+public class Task8{
     public static int chekInt(){
         Scanner sc = new Scanner(System.in);
         int x = 0;
