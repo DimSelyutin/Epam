@@ -11,19 +11,16 @@ public class Task4 {
         ArrFill arf = new ArrFill();
         Double[] massiv = arf.arraysDuoble(a);
         System.out.println("Массив значений создан.");
-        int i=0;
-        do {
-            i++;
-            if (massiv[i--]>massiv[i]) {
-                System.out.println("Массив является не возрастающим.");
+        for (Double double1 : massiv) {
+            System.out.printf("%.1f | ",double1);
+        }
+        for (int j = 0; j < massiv.length; j++) {
+            if (massiv[j]>massiv[++j]) {
+                System.out.println("Массив является не возрастающим!");
+                break;
+            } else {
+                System.out.println("Массив является возрастающим!");
             }
-        } while (massiv[i]<massiv[i++]);
-        // for (int i = 0; i < massiv.length; i++) {
-        //     if (massiv[i++]<massiv[i] ) {
-        //         System.out.println("Массив является не возрастающим!");
-        //     } else {
-
-        //     }
-        // }
+        }
     }
 }
