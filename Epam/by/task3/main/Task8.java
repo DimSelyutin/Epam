@@ -18,7 +18,6 @@ public class Task8{
         return x;
     }
     public static void main(String[] args){
-            Scanner sc = new Scanner(System.in);
             System.out.print("Введите число \n a: ");
             int a = chekInt();
             System.out.print("Введите число \n b: ");

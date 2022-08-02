@@ -5,6 +5,7 @@ import java.util.Scanner;
 // Составить программу нахождения наименьшего из квадратов двух чисел а и b.
 
 public class Task16{
+
     public static int chekInt(){                                        //метод проверки введенных данных
         Scanner sc = new Scanner(System.in);
         int x = 0;
@@ -17,7 +18,6 @@ public class Task16{
         return x;
     }
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
         System.out.print("Введите точки координат. \n x: ");
         int x = chekInt();
         System.out.print("y: ");
