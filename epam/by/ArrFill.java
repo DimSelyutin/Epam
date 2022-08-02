@@ -9,7 +9,15 @@ public class ArrFill{
         Random rand = new Random();
         int[] arr = new int[x];
         for (int i = 0; i < x; i++) {
-            arr[i] = rand.nextInt(100);
+            arr[i] = rand.nextInt(-100,100);
+        }
+        return arr;
+    }
+    public Double[] arraysDuoble(int x){
+        Random rand = new Random();
+        Double[] arr = new Double[x];
+        for (int i = 0; i < x; i++) {
+            arr[i] = rand.nextDouble(-100,100);
         }
         return arr;
     }
