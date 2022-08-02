@@ -1,4 +1,4 @@
-package Epam.by.task3.main;
+package epam.by.task3.main;
 import java.util.Scanner;
 // Вычислить: (1+2)*(1+2+3)*...*(1+2+...+10).
 public class Task162 {

@@ -1,4 +1,4 @@
-package Epam.by.task3.main;
+package epam.by.task3.main;
 import java.util.Scanner;
 
 // Написать программу, которая по заданным трем числам определяет, является ли сумма каких-либо двух из них

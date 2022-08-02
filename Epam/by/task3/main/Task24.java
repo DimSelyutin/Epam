@@ -1,4 +1,4 @@
-package Epam.by.task3.main;
+package epam.by.task3.main;
 import java.util.Scanner;
 
 // Составить программу, определяющую результат гадания на ромашке — «любит—не любит», взяв за исходное

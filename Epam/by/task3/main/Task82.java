@@ -1,4 +1,4 @@
-package Epam.by.task3.main;
+package epam.by.task3.main;
 
 import java.util.Scanner;
 // Вычислить значения функции на отрезке [а,b] c шагом h:
