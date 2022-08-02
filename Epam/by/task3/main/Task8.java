@@ -2,6 +2,7 @@ package Epam.by.task3.main;
 
 import java.util.Scanner;
 
+
 // Составить программу нахождения наименьшего из квадратов двух чисел а и b.
 
 public class Task8{
