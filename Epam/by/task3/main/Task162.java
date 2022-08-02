@@ -4,7 +4,8 @@ import java.util.Scanner;
 public class Task162 {
     public static void main(String[]args){
         Scanner sc = new Scanner(System.in);
-        double x, count = 1;
+        double x;
+        double count = 1;
 
         System.out.print("Введите число: ");
         x = sc.nextInt();
