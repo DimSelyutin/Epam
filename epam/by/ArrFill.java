@@ -21,4 +21,13 @@ public class ArrFill{
         }
         return arr;
     }
+    public int[] arrSubseq(int x){
+        Random rand = new Random();
+        int[] arr = new int[x];
+        for (int i = rand.nextInt(100), j = 0; j < arr.length; j++) {
+            arr[j] = i;
+            i++;
+        }
+        return arr;
+    }
 }

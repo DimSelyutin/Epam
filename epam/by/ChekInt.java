@@ -12,4 +12,17 @@ public class ChekInt {
         }
         return x;
     }
+
+    public double chekDouble(){
+        Scanner sc = new Scanner(System.in);
+        double x = 0;
+        if (!sc.hasNextDouble()) {
+            System.out.println("Видимо вы вводите не правильное число :(");
+            
+        } else {
+            x = sc.nextDouble();
+        }
+        return x;
+        
+    }
 }
