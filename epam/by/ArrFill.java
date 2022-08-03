@@ -21,10 +21,22 @@ public class ArrFill{
         }
         return arr;
     }
+
     public int[] arrSubseq(int x){
         Random rand = new Random();
         int[] arr = new int[x];
         for (int i = rand.nextInt(100), j = 0; j < arr.length; j++) {
+            arr[j] = i;
+            i++;
+        }
+        return arr;
+    }
+
+    public Double[] arrSubDouble(int x){
+        Random rand = new Random();
+        Double[] arr = new Double[x];
+        Double i = rand.nextDouble(100);
+        for (int j = 0; j < arr.length; j++) {
             arr[j] = i;
             i++;
         }
