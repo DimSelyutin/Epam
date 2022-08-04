@@ -8,15 +8,18 @@ public class Task5 {
         System.out.print("Введите кол-во значений в массиве: ");
         ChekInt ch = new ChekInt();
         int a = ch.chekInt();
+        
         ArrFill arf = new ArrFill();
         int[] massiv = arf.arrays(a);
         System.out.println("Массив значений создан.");
+        
         int count =0;
         for (int i = 0; i < massiv.length; i++) {
             if (massiv[i]%2==0) {
                 count++;
             }
         }
+        
         if (count == 0) {
             System.out.println("Четных значений не обнаружено!");
         } else {
@@ -31,5 +34,6 @@ public class Task5 {
                 System.out.print(i+" | ");
             }
         }
+        
     }
 }
