@@ -9,18 +9,22 @@ public class Task9 {
         ChekInt ch = new ChekInt();                     
         int a = ch.chekInt();                   //проверка значения
         ArrFill arf = new ArrFill();
+        
         Double[] massiv = arf.arraysDuoble(a);           //создание массива
         System.out.println("Массив значений создан.");
         System.out.println("Первоначальный массив:");
+        
         for (Double i : massiv) {
             System.out.printf("%.1f \n",i);
         }
 
         int indexMax = 0;
         int indexMin = 0;
+        
         double countMax = massiv[0];
         double countMin = massiv[0];
         double count = 0;
+        
         for (int i = 0; i < massiv.length; i++) {
             if (massiv[i]>countMax) {
                 countMax = massiv[i];
