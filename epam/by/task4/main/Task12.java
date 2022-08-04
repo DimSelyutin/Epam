@@ -7,14 +7,17 @@ public class Task12 {
     public static void main(String[] args) {
         System.out.print("Введите кол-во значений в массиве: ");
         ChekInt ch = new ChekInt();
+        
         int a = ch.chekInt();
         ArrFill arf = new ArrFill();
+        
         int[] massiv = arf.arrSubseq(a);
         System.out.println("Массив значений создан.");
         
         for (int i : massiv) {
             System.out.println(i);
         }
+        
         System.out.println("Конечный массив: ");
         for (int i = 0; i < massiv.length; i++) {
             if (massiv[i]==2 || massiv[i]==3) {
@@ -28,6 +31,7 @@ public class Task12 {
                 }
                 System.out.println(massiv[i]);
             }
+            
             if(massiv[i]<25){
             System.out.println(massiv[i]);
             }
