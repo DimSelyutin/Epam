@@ -8,11 +8,14 @@ public class Task7 {
         System.out.print("Введите кол-во значений в массиве: ");
         ChekInt ch = new ChekInt();
         int a = ch.chekInt();
+        
         ArrFill arf = new ArrFill();
         int[] massiv = arf.arrays(a);
         System.out.println("Массив значений создан.");
+        
         System.out.print("Введите ваше значение: ");
         int number = ch.chekInt();
+        
         int count = 0;
         for (int i = 0; i < massiv.length; i++) {
             if (massiv[i]>number) {
@@ -20,9 +23,11 @@ public class Task7 {
                 count++;
             }
         }
+        
         for (int i : massiv) {
             System.out.println(i);
         }
+        
         System.out.println("Кол-во замен: "+count);
     }
 }

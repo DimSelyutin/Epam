@@ -36,4 +36,7 @@ public class Task18copy {
 		        System.out.println(d);
 		    }
 	}
+
 }
+
+

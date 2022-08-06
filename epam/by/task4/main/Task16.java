@@ -7,10 +7,14 @@ public class Task16 {
     public static void main(String[] args) {
         System.out.print("Введите кол-во значений в массиве: ");
         ChekInt ch = new ChekInt();
+        
         int a = ch.chekInt();
         ArrFill arf = new ArrFill();
+        
         Double[] massiv = arf.arraysDuoble(a);
+        
         System.out.println("Массив значений создан.");
+        
         for (Double i : massiv) {
             System.out.printf("%.1f \n",i);
         }
@@ -23,12 +27,16 @@ public class Task16 {
         for (double d : count) {
             System.out.printf("%.1f\n",d);
         }
+        
         Double maxCount = count[0];
+        
+        
         for (int i = 0; i < count.length; i++) {
             if (count[i]>maxCount) {
                 maxCount=count[i];
             }
         }
+        
         System.out.printf("Максимальное значение: %.1f",maxCount);
     }
 }

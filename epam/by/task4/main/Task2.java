@@ -8,9 +8,11 @@ public class Task2 {
     public static void main(String[] args){
         Random rand = new Random();
         ChekInt ch = new ChekInt();
+        
         System.out.print("Введите размер массива: ");
         int x = ch.chekInt();
         int[] arr = new int[x];
+        
         for (int i = 0; i < x; i++) {
             arr[i] = rand.nextInt(100);
         }
@@ -28,6 +30,7 @@ public class Task2 {
                 zeroPosition[j++]=i;
             }
         }
+        
         for (int i : zeroPosition) {
             System.out.printf("[%d] ", i);
         }
