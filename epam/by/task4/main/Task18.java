@@ -36,11 +36,6 @@ public class Task18 {
             }
 ////////////////////////Подбор неизвестных значений.
         boolean bool = true;
-        // for (int i = 0; i < massiv.length; i++) {
-        //     if(massiv[i]==0){
-        //         massiv[i]= rand.nextInt(1,6);
-        //     }
-        // }
         do {
             for (int i = 0; i < massiv.length; i++) {
                 if(cop[i]==0){
