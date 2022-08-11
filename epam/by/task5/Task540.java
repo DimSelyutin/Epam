@@ -8,36 +8,36 @@ import epam.by.ChekInt;
 // Построить такой квадрат.
 public class Task540 {
 	
-    public static void main(String[] args) {
-        System.out.print("Enter the order value: ");
-        Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+		System.out.print("Enter the order value: ");
+		Scanner sc = new Scanner(System.in);
 		int x = sc.nextInt();
 		int[][] arr = new int[x][x];
 
-		//Цикл для нечетного порядка
-	    int count=0;
-	    for(int i=0,j=arr.length/2;count!=x*x;i--,j++){
+			//Цикл для нечетного порядка
+		int count=0;
+		for(int i=0,j=arr.length/2;count!=x*x;i--,j++){
 
-		    count++;
+		count++;
 
-            if(i==-1){
-                i=arr.length-1;
-            } else if(j==arr.length){
-                j=0;
-            }
+	    	if(i==-1){
+		i=arr.length-1;
+	    	} else if(j==arr.length){
+		j=0;
+	    	}
+
+	    	if(arr[i][j]!=0){
+		i+=2;
+		j-=1;
+	    	} 
 		     
-            if(arr[i][j]!=0){
-                i+=2;
-                j-=1;
-            } 
-		     
-		    if(j>=arr.length){
-		        j=-1;
+	    	if(j>=arr.length){
+			j=-1;
 		    }else if(i<0){
-		        i=arr.length;
-		    }
+			i=arr.length;
+	    	}
 
-		    if(!(i==0 && j==arr.length-1)){
+	    	if(!(i==0 && j==arr.length-1)){
 		         
                 System.out.println(i+" "+j);
                 arr[i][j]=count;
