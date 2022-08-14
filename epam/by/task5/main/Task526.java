@@ -9,6 +9,11 @@ import java.util.Scanner;
 // в) переставить местами максимальный и минимальный элементы матрицы.
 
 public class Task526 {
+
+    /**
+     * @return Scanner is resource
+     *
+     */
     public static int chekInt(){
           Scanner sc = new Scanner(System.in);
           int x = 0;

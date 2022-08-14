@@ -5,7 +5,7 @@ import java.util.Scanner;
 //24. Дан линейный массив n n x , x , , x , x 1 2  −1 . Получить действительную квадратную матрицу порядка n:
 public class Task524 {
     public static void main(String[] args) {
-        System.out.print("Enter the order value №1: ");
+        System.out.print("Enter the order value: ");
       
         Random rand = new Random();
         Scanner sc = new Scanner(System.in);
@@ -17,7 +17,8 @@ public class Task524 {
         //заполнение матрицы
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
-                arr[i][j] = rand.nextInt(1,100);
+                arr[i][j] = (int)(Math.pow(j+1, i+1));
+
             }
         }
 
