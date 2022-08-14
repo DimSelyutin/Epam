@@ -1,6 +1,5 @@
 package epam.by.task5.main;
 
-import java.util.Random;
 import java.util.Scanner;
 
 // Операция сглаживания матрицы дает новую матрицу того же размера, каждый элемент которой получается
@@ -8,7 +7,6 @@ import java.util.Scanner;
 // сглаживания заданной матрицы
 public class Task534 {
     public static void main(String[] args) {
-        Random rand = new Random();
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter the order value №1: ");

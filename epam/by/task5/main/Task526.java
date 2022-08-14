@@ -12,6 +12,7 @@ public class Task526 {
     public static int chekInt(){
           Scanner sc = new Scanner(System.in);
           int x = 0;
+          
           if (!sc.hasNextInt()) {
               System.out.println("Видимо вы вводите не число :(");
 
@@ -26,7 +27,7 @@ public class Task526 {
         System.out.print("Enter the order value №1 of matrix: ");
         Random rand = new Random();
 
-		    int x = chekInt();
+		int x = chekInt();
         System.out.print("Enter the order value №2: "+x+"x..");
 
         int s = chekInt();

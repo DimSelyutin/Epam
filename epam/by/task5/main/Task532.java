@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 //Отсортировать строки матрицы по возрастанию и убыванию значений элементов.
-public class Task534 {
+public class Task532 {
     public static void main(String[] args) {
         Random rand = new Random();
         Scanner sc = new Scanner(System.in);
