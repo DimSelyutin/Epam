@@ -10,25 +10,27 @@ import java.util.Scanner;
 
 public class Task526 {
     public static int chekInt(){
-        Scanner sc = new Scanner(System.in);
-        int x = 0;
-        if (!sc.hasNextInt()) {
-            System.out.println("Видимо вы вводите не число :(");
-            
-        } else {
-            x = sc.nextInt();
-        }
-        return x;
+          Scanner sc = new Scanner(System.in);
+          int x = 0;
+          if (!sc.hasNextInt()) {
+              System.out.println("Видимо вы вводите не число :(");
+
+          } else {
+              x = sc.nextInt();
+          }
+          return x;
     }
+  
+  
     public static void main(String[] args) {
         System.out.print("Enter the order value №1 of matrix: ");
         Random rand = new Random();
 
-		int x = chekInt();
+		    int x = chekInt();
         System.out.print("Enter the order value №2: "+x+"x..");
 
         int s = chekInt();
-		int[][] arr = new int[x][s];
+		    int[][] arr = new int[x][s];
         System.out.println("Size of matrix: "+x+"x"+s+"\n Enter a value: ");
 
             //заполнение матрицы
@@ -80,13 +82,17 @@ public class Task526 {
             for (int j = 0; j <arr[i].length; j++) {
 
                 if (arr[i][j]<countMin) {
+                  
                     countMin=arr[i][j];
                     minId = i;
                     _minId = j;
+                  
                 }else if(arr[i][j]>_countMax){
+                  
                     _countMax = arr[i][j];
                     maxId = i;
                     _maxId= j;
+                  
                 }
 
             }
@@ -104,17 +110,21 @@ public class Task526 {
 
         System.out.println("The maximum value in every line: ");
         for (int i = 0; i < lineMax.length; i++) {
+          
                 System.out.println("Line №"+(lineMax[i][0]+1)+": "+lineMax[i][1]);
+          
         }
 
 
         System.out.println();
         System.out.println("Array after replacement max on min value: ");
         for (int[] is : arr) {
+          
             for (int is2 :is) {
                 System.out.print(is2+"\t");
             }
             System.out.println();
+          
         }
 
     }

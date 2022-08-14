@@ -9,10 +9,12 @@ import java.util.Scanner;
 public class Task528 {
     public static void main(String[] args) {
         System.out.print("Enter the order value №1: ");
+      
         Random rand = new Random();
         Scanner sc = new Scanner(System.in);
-		int x = sc.nextInt();
-		int[][] arr = new int[x][x];
+      
+		    int x = sc.nextInt();
+		    int[][] arr = new int[x][x];
         
 
             //заполнение матрицы
@@ -24,15 +26,18 @@ public class Task528 {
 
         //начальная матрица
         System.out.println("Beginer matrix: ");
+      
         for (int[] is : arr) {
             for (int j = 0; j < is.length; j++) {
                 System.out.print("\t"+is[j]+"\t");
             }
             System.out.println();
         }
+      
         int count = 0;
         int primeCount =0;
         String colum = "";
+      
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length; j++) {
                 count += arr[j][i];
@@ -43,6 +48,7 @@ public class Task528 {
             }
             count=0;
         }
+      
         System.out.println("The largest amount contains colum №"+colum +" Сумма: "+primeCount);
 
 

@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 //Отсортировать строки матрицы по возрастанию и убыванию значений элементов.
-public class Task532 {
+public class Task534 {
     public static void main(String[] args) {
         Random rand = new Random();
         Scanner sc = new Scanner(System.in);
@@ -15,7 +15,7 @@ public class Task532 {
         System.out.print("Enter the order value №2 (№2>№1): ");
         int s = sc.nextInt();
       
-		int[][] arr = new int[x][s];
+		    int[][] arr = new int[x][s];
         
 
         //заполнение матрицы

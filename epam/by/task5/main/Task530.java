@@ -32,9 +32,11 @@ public class Task530 {
                     count++;
                 }
             }
+          
             if (count>=3) {
                 countStr += i+" ";
             }
+          
             count=0;
             System.out.println();
         }
