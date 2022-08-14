@@ -31,7 +31,7 @@ public class Task18copy {
 		    arr[count+1]=1;
 		    arr[count+2]=10-arr[count]-1;
 		}
-		System.out.println("Итоговый массив:");		
+		System.out.println("Итоговый массив: ");		
                     for(int d : arr){
 		        System.out.println(d);
 		    }
