@@ -1,3 +1,5 @@
+package epam.by.task5.main;
+//22. сформировать квадратную матрицу
 import java.util.Scanner;
 import java.util.Random;
 
