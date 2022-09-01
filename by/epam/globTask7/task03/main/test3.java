@@ -1,4 +1,4 @@
-package by.epam.globTask7.task02.main;
+package by.epam.globTask7.task03.main;
 
 
 public class Task72 {
