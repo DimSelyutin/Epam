@@ -1,4 +1,4 @@
-package by.epam.globTask7.task02;
+package by.epam.globTask7.task02.main;
 
 import java.util.Random;
 
