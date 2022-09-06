@@ -1,4 +1,4 @@
-package by.epam.task7.main.task1.main;
+package by.epam.globTask7.task01;
 public class Test2 {
     private int a1;
     private int b1;

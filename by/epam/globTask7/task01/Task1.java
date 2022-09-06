@@ -1,4 +1,4 @@
-package by.epam.task7.main.task1.main;
+package by.epam.globTask7.task01;
 
 public class Task1{
     public static void main(String args[]){
