@@ -1,4 +1,4 @@
-package by.epam.task7.task4;
+package by.epam.globTask7.task04;
 
 import java.util.Random;
 
@@ -8,6 +8,17 @@ public class Train {
 
     private String station;
 
+
+
+    public Train(){
+        Random rand = new Random();
+        setTrainNumber(trainNumberArr[rand.nextInt(0,5)]);
+        setStation(stationName[rand.nextInt(0,4)]);
+        departure = timeGenerate()[0] + ":"+timeGenerate()[1];
+    }
+
+
+    
     public String getStation() {
         return station;
     }
@@ -37,15 +48,10 @@ public class Train {
         this.departure = departure;
     }
 
-    public Train(){
-        Random rand = new Random();
-        setTrainNumber(trainNumberArr[rand.nextInt(0,5)]);
-        setStation(stationName[rand.nextInt(0,4)]);
-        departure = timeGenerate()[0] + ":"+timeGenerate()[1];
-    }
+    
     
 
-    public int[] timeGenerate(){
+    private int[] timeGenerate(){
         int[] timing = new int[2];
         Random rand = new Random();
 
@@ -54,6 +60,8 @@ public class Train {
 
         return timing;
     }
+
+
 
 
     
