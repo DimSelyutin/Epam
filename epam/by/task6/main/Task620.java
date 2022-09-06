@@ -1,14 +1,11 @@
 package epam.by.task6.main;
 
-import java.util.Scanner;
-import java.util.Random;
 
 public class Task620 {
 	public static void main(String[] args) {
 		String str = "     Lorem     Ipsum is     simply dummy text    of the            printing and typesetting industry     ";
-		
-	    String str2 = "";
-	    
+		System.out.println(str);
+	    str = str.trim();
 	    do{
 	        
 	        str = str.replace("  "," ");
@@ -20,8 +17,8 @@ public class Task620 {
 	    
 	        // или str.replaceAll("\\s+","")
 
-	    str2 = str.trim();
-		System.out.println(str2.replace(" ", "."));
+	    
+		System.out.println(str.replace(" ", " "));
 	}
 }
 
