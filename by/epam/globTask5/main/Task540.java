@@ -1,4 +1,4 @@
-package by.epam.globTask6.globTask5.main;
+package by.epam.globTask5.main;
 
 import java.util.Scanner;
 //40 Магическим квадратом порядка n называется квадратная матрица размера nxn, составленная из чисел 1, 2, 3, ...,2n

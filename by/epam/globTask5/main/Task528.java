@@ -1,4 +1,4 @@
-package by.epam.globTask6.globTask5.main;
+package by.epam.globTask5.main;
 
 import java.util.Random;
 import java.util.Scanner;

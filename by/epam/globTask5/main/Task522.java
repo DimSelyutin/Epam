@@ -1,4 +1,4 @@
-package by.epam.globTask6.globTask5.main;
+package by.epam.globTask5.main;
 //22. сформировать квадратную матрицу
 import java.util.Scanner;
 import java.util.Random;
