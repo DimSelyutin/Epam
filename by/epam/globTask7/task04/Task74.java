@@ -7,8 +7,9 @@ public class Task74 {
         Train[] train = new Train[5];
         for (int i = 0; i < train.length; i++) {            
             train[i] = new Train();
-        }
-                                                            //запись в масив масивов
+        } 
+
+                                                                            //запись в масив масивов
         int[][] trainNumberId = new int[5][5];
         for (int i = 0; i < trainNumberId.length; i++) {
             for (int j = 0; j < 2; j++) {
@@ -34,7 +35,7 @@ public class Task74 {
             trainNumberId[j][1] = current;
             trainNumberId[j][0] = coun;
         }
-
+        
 
         int id = 0;
         for (int i = 0; i < train.length; i++) {

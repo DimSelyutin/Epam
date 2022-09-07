@@ -18,6 +18,9 @@ public class Train {
         departure = timeGenerate();
     }
 
+    public Train(int num){
+        
+    }
 
     
     public String getStation() {
@@ -80,6 +83,8 @@ public class Train {
 
 
 
+
+    
 
     
 
