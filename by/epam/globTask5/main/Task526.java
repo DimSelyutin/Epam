@@ -1,6 +1,6 @@
 package by.epam.globTask5.main;
 
-import java.util.Random;
+
 import java.util.Scanner;
 
 // С клавиатуры вводится двумерный массив чисел размерностью nxm. Выполнить с массивом следующие действия:
@@ -30,7 +30,7 @@ public class Task526 {
   
     public static void main(String[] args) {
         System.out.print("Enter the order value №1 of matrix: ");
-        Random rand = new Random();
+
 
 		int x = chekInt();
         System.out.print("Enter the order value №2: "+x+"x..");

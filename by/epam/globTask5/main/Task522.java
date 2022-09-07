@@ -1,7 +1,7 @@
 package by.epam.globTask5.main;
 //22. сформировать квадратную матрицу
 import java.util.Scanner;
-import java.util.Random;
+
 
 public class Task522 {
 	public static void main(String[] args) {

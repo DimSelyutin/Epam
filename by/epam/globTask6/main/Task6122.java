@@ -1,6 +1,5 @@
 package by.epam.globTask6.main;
 
-import java.util.Scanner;
 
 public class Task6122 {
     public static void main(String[] args) {
