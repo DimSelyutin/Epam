@@ -36,7 +36,6 @@ public class GetName implements Serializable{
         } else {
             cardSurname = ""+Files.readAllLines(Paths.get(pathName)).get(rand.nextInt(15,29));
         }
-        
     }
 
     
