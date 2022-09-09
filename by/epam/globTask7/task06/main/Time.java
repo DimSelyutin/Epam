@@ -1,7 +1,8 @@
 package by.epam.globTask7.task06.main;
 
+import java.io.Serializable;
 
-public class Time {
+public class Time implements Serializable {
     private int hours;
     private int minutes;
     private int seconds;
