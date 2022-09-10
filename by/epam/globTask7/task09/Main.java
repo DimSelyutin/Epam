@@ -17,7 +17,7 @@ public class Main implements Serializable{
         new Book("BokName4", "Author5", "Publisher5", 1999, 150, 300).addToList(book);
 
         AgregatorBook ab = new AgregatorBook();
-        System.out.println("Search by author:_\n Enter the name of author: ");
+        System.out.println("Search by author:_\nEnter the name of author: ");
         Scanner sc = new Scanner(System.in);
 
         String author = sc.nextLine();

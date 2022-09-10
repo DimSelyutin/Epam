@@ -15,7 +15,9 @@ import java.util.ArrayList;
 public class Book implements Serializable{//id, name,author,publisher, creatYear, pages,price,
     
     public Book(){
-        
+        id = ID;
+        bookName = "book";
+        author = "Author";
     }
 
 
