@@ -1,4 +1,4 @@
-package by.epam.task11.main.model;
+package by.epam.task11.main.view;
 
 public class Present {
     Present(){

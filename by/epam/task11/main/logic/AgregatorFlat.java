@@ -1,10 +1,10 @@
-package by.epam.task11.main.model;
+package by.epam.task11.main.logic;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import by.epam.task11.main.Flat;
+import by.epam.task11.main.bean.Flat;
 
 
 public class AgregatorFlat implements Serializable{

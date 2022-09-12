@@ -10,6 +10,7 @@ public class Main {
         counter.setNumberStart(sc.nextInt());
         System.out.println("Enter number of end: ");
         counter.setNumberEnd(sc.nextInt());
+        
         counter.counter();
         counter.counterPrint();
         

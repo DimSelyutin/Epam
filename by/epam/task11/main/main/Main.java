@@ -1,12 +1,14 @@
-package by.epam.task11.main;
+package by.epam.task11.main.main;
 
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import by.epam.task11.main.model.AgregatorFlat;
-import by.epam.task11.main.model.Present;
+
+import by.epam.task11.main.bean.Flat;
+import by.epam.task11.main.logic.AgregatorFlat;
+import by.epam.task11.main.view.Present;
 
 
 public class Main implements Serializable {

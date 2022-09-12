@@ -1,4 +1,4 @@
-package by.epam.task11.main;
+package by.epam.task11.main.bean;
 
 import java.io.IOException;
 import java.io.Serializable;

@@ -2,13 +2,15 @@ package by.epam.globTask7.task04;
 
 import java.util.Scanner;
 
-public class Task74 {
+import by.epam.globTask7.task04.model.Logic;
+
+public class Main {
     public static void main(String[] args) {
         Train[] train = new Train[5];
         for (int i = 0; i < train.length; i++) {
             train[i] = new Train();
         }
-        
+        Logic lg = new Logic();
         
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number of action:\n1. Sort about number of train\n2. Sort about station\n3. Show tran information\n ");
@@ -18,7 +20,7 @@ public class Task74 {
         switch (x) {
 
             case 1:
-                int[][] array = train[0].trainSort(train);
+                int[][] array = lg.trainSort(train);
                 int id = 0;
                 for (int i = 0; i < array.length; i++) {
                     id = array[i][0];
@@ -28,7 +30,7 @@ public class Task74 {
 
 
             case 2:
-                String st[][] = train[0].sortStation(train);
+                String st[][] = lg.sortStation(train);
                 int count = 0;
                 for (int i = 0; i < st.length; i++) {
                     count = Integer.parseInt(st[0][i]);
