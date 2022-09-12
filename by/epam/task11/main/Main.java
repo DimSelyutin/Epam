@@ -5,12 +5,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
 import by.epam.task11.main.model.AgregatorFlat;
 import by.epam.task11.main.model.Present;
-
-
-
 
 
 public class Main implements Serializable {
