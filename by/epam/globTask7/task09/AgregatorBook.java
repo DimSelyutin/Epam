@@ -2,6 +2,7 @@ package by.epam.globTask7.task09;
 
 import java.util.List;
 
+
 public class AgregatorBook implements Comparable<Book>{
     public AgregatorBook(){
         
