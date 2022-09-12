@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import by.epam.task11.main.bean.Flat;
-import by.epam.task11.main.logic.AgregatorFlat;
+import by.epam.task11.main.logic.LogicFlat;
 import by.epam.task11.main.view.Present;
 
 
@@ -29,7 +29,7 @@ public class Main implements Serializable {
         //a
         System.out.println("For search flats by room amount, enter amount:");
         int room1 = checkNum();
-        searchRoom = new AgregatorFlat().searchRoom(flat,room1);
+        searchRoom = new LogicFlat().searchRoom(flat,room1);
         Present.table();
         for (Flat _s : searchRoom) {
             System.out.println(_s.getNumber()+"\t\t"+_s.getRoom()+"\t"+_s.getFloor()+"\t"+_s.getStreet()+"\t"+_s.getSquare()+"\t"+_s.getFlatType());
@@ -48,7 +48,7 @@ public class Main implements Serializable {
         System.out.print("Enter last floor_ ");
         int pos2 = checkNum();
 
-        searchRoom = new AgregatorFlat().serachRoomFlat(flat,room2,pos1,pos2);
+        searchRoom = new LogicFlat().serachRoomFlat(flat,room2,pos1,pos2);
         Present.table();
         for (Flat _s : searchRoom) {
             System.out.println(_s.getNumber()+"\t\t"+_s.getRoom()+"\t"+_s.getFloor()+"\t"+_s.getStreet()+"\t"+_s.getSquare()+"\t"+_s.getFlatType());
@@ -60,7 +60,7 @@ public class Main implements Serializable {
         System.out.println("For search of room square, enter start square: ");
         int square = checkNum();
         Present.table();
-        searchRoom = new AgregatorFlat().serachSquare(flat,square);
+        searchRoom = new LogicFlat().serachSquare(flat,square);
         for (Flat _s : searchRoom) {
             System.out.println(_s.getNumber()+"\t\t"+_s.getRoom()+"\t"+_s.getFloor()+"\t"+_s.getStreet()+"\t"+_s.getSquare()+"\t"+_s.getFlatType());
         }

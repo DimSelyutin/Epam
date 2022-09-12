@@ -7,16 +7,11 @@ import java.util.List;
 import by.epam.task11.main.bean.Flat;
 
 
-public class AgregatorFlat implements Serializable{
-    public AgregatorFlat(){
+public class LogicFlat implements Serializable{
+    public LogicFlat(){
 
     }
-    
-    /**
-     * @param flat
-     * @param amount
-     * @return
-     */
+
     public List<Flat> searchRoom(List<Flat> flat,int amount){
         List<Flat> s = new ArrayList<>();
         for (Flat f : flat) {

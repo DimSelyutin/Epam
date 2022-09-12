@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Flat implements Serializable{
+    private static final long serialVersionUID = 1L;
+    
     private int number;
     private int square;
     private int floor;
