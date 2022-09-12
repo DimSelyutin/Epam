@@ -1,11 +1,13 @@
-package by.epam.task11.main.main;
+package by.epam.task11.main;
 
 import java.io.IOException;
 import java.io.Serializable;
+import java.lang.module.ModuleDescriptor.Builder;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import by.epam.task11.main.bean.Building;
 import by.epam.task11.main.bean.Flat;
 import by.epam.task11.main.logic.LogicFlat;
 import by.epam.task11.main.view.Present;
@@ -16,29 +18,21 @@ public class Main implements Serializable {
 
 
     public static void main(String[] args) throws IOException {
-
-
-
-
-        ArrayList<Flat> flat = new ArrayList<>();
-        for (int i = 0; i < 15; i++) {
-            new Flat().addToList(flat);
-        }
-
-
+        
+        Present d = new Present();
+        List<Flat> flat = new Building().createFlat();
         //a
         System.out.println("For search flats by room amount, enter amount:");
         int room1 = checkNum();
         searchRoom = new LogicFlat().searchRoom(flat,room1);
-        Present.table();
-        for (Flat _s : searchRoom) {
-            System.out.println(_s.getNumber()+"\t\t"+_s.getRoom()+"\t"+_s.getFloor()+"\t"+_s.getStreet()+"\t"+_s.getSquare()+"\t"+_s.getFlatType());
-        }
+
+        d.table();
+        d.printFlat(searchRoom);
         
 
         
         //b
-        System.out.println("For search by room amount and flat range, enter amount and flat gap from ... to ...:");
+        System.out.println("\nFor search by room amount and flat range, enter amount and flat gap from ... to ...:");
         System.out.print("Enter amount_ ");
         int room2 = checkNum();
 
@@ -49,21 +43,18 @@ public class Main implements Serializable {
         int pos2 = checkNum();
 
         searchRoom = new LogicFlat().serachRoomFlat(flat,room2,pos1,pos2);
-        Present.table();
-        for (Flat _s : searchRoom) {
-            System.out.println(_s.getNumber()+"\t\t"+_s.getRoom()+"\t"+_s.getFloor()+"\t"+_s.getStreet()+"\t"+_s.getSquare()+"\t"+_s.getFlatType());
-        }
+        d.table();
+        d.printFlat(searchRoom);
 
 
 
         //c
-        System.out.println("For search of room square, enter start square: ");
+        System.out.println("\nFor search of room square, enter start square: ");
         int square = checkNum();
-        Present.table();
+
         searchRoom = new LogicFlat().serachSquare(flat,square);
-        for (Flat _s : searchRoom) {
-            System.out.println(_s.getNumber()+"\t\t"+_s.getRoom()+"\t"+_s.getFloor()+"\t"+_s.getStreet()+"\t"+_s.getSquare()+"\t"+_s.getFlatType());
-        }
+        d.table();
+        d.printFlat(searchRoom);
 
     }
 

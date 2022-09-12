@@ -4,36 +4,30 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 import java.util.Random;
 
 public class Flat implements Serializable{
     private static final long serialVersionUID = 1L;
-    
+
     private int number;
     private int square;
     private int floor;
-    public int getFloor() {
-        return floor;
-    }
-
-    public void setFloor(int floor) {
-        this.floor = floor;
-    }
-
     private int room;
     private String street;
     private String flatType;
     private int exploit;
     private String path = "E:/GitHub/Epam/Epam-1/by/epam/task11/main/model/database.txt";
 
+
+
     public String getPath(){
         return path;
     }
     
-    private static int NUMBER = 1;
     Flat(int _number, int _square, int _floor, int _room, String _street){
-        number = NUMBER++;
+        number = _number;
         square = _square;
         floor = _floor;
         room = _room;
@@ -71,6 +65,15 @@ public class Flat implements Serializable{
     }
 
 
+    public int getFloor() {
+        return floor;
+    }
+
+    public void setFloor(int floor) {
+        this.floor = floor;
+    }
+
+
     public int getRoom() {
         return room;
     }
@@ -102,25 +105,33 @@ public class Flat implements Serializable{
         this.exploit = exploit;
     }
 
-    public Flat addToList(ArrayList<Flat> flat) {
-        flat.add(this);
-        return this;
-    }
+
 
     @Override
     public boolean equals(Object obj) {
-        // TODO Auto-generated method stub
         return super.equals(obj);
     }
+
+
     @Override
     public int hashCode() {
         // TODO Auto-generated method stub
-        return super.hashCode();
+        return Objects.hash(number,square,floor,room,street,flatType,exploit);
     }
     @Override
     public String toString() {
         // TODO Auto-generated method stub
-        return super.toString();
+        return "Room number: "+number+"Square: "+square+"Floor: "+floor+"Rooms amount: "+street+"Type of flat: "+flatType+"Exploitation time: "+exploit;
     }
+
+    public Flat add(Flat flat) {
+        flat.add(flat);
+        return flat;
+    }
+
+    public void remove(Flat flat) {
+        flat.remove(flat);
+    }
+
 
 }
