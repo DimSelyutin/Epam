@@ -13,7 +13,7 @@ public class Test3 {
         Student[] student = new Student[studentCount];
       
         for (int i = 0; i < student.length; i++) {
-          
+            
             student[i] = new Student();
           
         }
