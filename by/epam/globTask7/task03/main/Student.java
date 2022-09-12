@@ -58,37 +58,7 @@ public class Student {
     }
     
   
-    public void excellentPrint(){    //метод выводящий только отличников
-      
-        int count=0;
-        for (int i = 0; i < performance.length; i++) {
-          
-            if (performance[i] >= 9) {
-                count++;
-              
-            }
-          
-        
-          
-            if (count == 5) {
-                System.out.println("Student name: "+getName()+" "+getSurname()+"\nGroup number: " + groupNumber);
-                System.out.println("Student ratings: ");
-              
-                for (int j = 0; j < performance.length; j++) {
-                  
-                    System.out.print(performance[j]+ "\t");
-                  
-                }
-              
-                System.out.println();
-              
-            }
-          
-          
-          
-          
-        }
-    }
+    
     
     
 }   

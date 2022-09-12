@@ -15,7 +15,6 @@ public class Main implements Serializable {
 
     public static void main(String[] args) throws IOException {
 
-        Scanner sc = new Scanner(System.in);
 
 
 
