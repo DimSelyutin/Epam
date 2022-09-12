@@ -28,7 +28,6 @@ public class AgregatorFlat implements Serializable{
     }
 
 
-
     public List<Flat> serachRoomFlat(List<Flat> flat,int amount, int pos1, int pos2){
         List<Flat> s = new ArrayList<>();
         for (Flat f : flat) {
