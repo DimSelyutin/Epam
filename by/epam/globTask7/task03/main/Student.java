@@ -68,7 +68,7 @@ public class Student {
               
             }
           
-          
+        
           
             if (count == 5) {
                 System.out.println("Student name: "+getName()+" "+getSurname()+"\nGroup number: " + groupNumber);
