@@ -28,7 +28,7 @@ public class Building implements Serializable{
     }
 
     public List<Flat> createFlat() throws IOException{
-        final int OBJAMOUNT = 15;
+        int OBJAMOUNT = 15;
         List<Flat> flat = new ArrayList<>();
         for (int i = 0; i < OBJAMOUNT; i++) {
             flat.add(new Flat());

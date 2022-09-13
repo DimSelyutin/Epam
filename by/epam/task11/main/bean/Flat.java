@@ -25,12 +25,12 @@ public class Flat implements Serializable{
         return path;
     }
     
-    Flat(int _number, int _square, int _floor, int _room, String _street){
-        number = _number;
-        square = _square;
-        floor = _floor;
-        room = _room;
-        street = _street;
+    Flat(int number, int square, int floor, int room, String street){
+        this.number = number;
+        this.square = square;
+        this.floor = floor;
+        this.room = room;
+        this.street =street;
         flatType = "Panel";
         exploit = 5;
     }
