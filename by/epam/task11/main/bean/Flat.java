@@ -123,14 +123,6 @@ public class Flat implements Serializable{
         return "Room number: "+number+"Square: "+square+"Floor: "+floor+"Rooms amount: "+street+"Type of flat: "+flatType+"Exploitation time: "+exploit;
     }
 
-    public Flat add(Flat flat) {
-        flat.add(flat);
-        return flat;
-    }
-
-    public void remove(Flat flat) {
-        flat.remove(flat);
-    }
-
+    
 
 }
