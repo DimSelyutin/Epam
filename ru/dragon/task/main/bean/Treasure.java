@@ -4,15 +4,28 @@ import java.io.Serializable;
 
 public class Treasure implements Serializable{
     
+    private String[] typesTreas = {"Coins", "Armor", "Table-item", "Jewel", "Magic-item", "Egg"};
+
     private String rare;
-    private String[] typeTreasure = {"Coins", "Armor", "Table-item", "Jewel", "Magic-item", "Egg"};
+    private String typeTreasure;
     private int mass;
     private int coast;
 
-
-
-
-
+    
+    
+    Treasure(){
+        this.rare = "common";
+        this.typeTreasure = typesTreas[0];
+        this.mass = 1;
+        this.coast = 10;
+    }
+    
+    Treasure(rare, mass, coast){
+        this.rare = rare;
+        this.mass = mass;
+        this.coast = coast;
+    }
+    
     public String getRare() {
         return rare;
     }

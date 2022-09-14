@@ -25,6 +25,8 @@ public class Flat implements Serializable{
         return path;
     }
     
+
+
     Flat(int number, int square, int floor, int room, String street){
         this.number = number;
         this.square = square;
@@ -35,10 +37,11 @@ public class Flat implements Serializable{
         exploit = 5;
     }
 
-    Random rand = new Random();
+    
 
 
     public Flat() throws IOException{
+        Random rand = new Random();
         number = rand.nextInt(1,50);
         square = rand.nextInt(46,59);
         floor = rand.nextInt(1,9);
