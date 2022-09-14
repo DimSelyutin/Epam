@@ -6,6 +6,8 @@ import java.util.List;
 public class Cave implements Serializable{
     private List<Treasure> treasures;
 
+
+    
     public void getTreasures(){
         
     }

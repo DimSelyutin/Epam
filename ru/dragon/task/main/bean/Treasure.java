@@ -20,8 +20,9 @@ public class Treasure implements Serializable{
         this.coast = 10;
     }
     
-    Treasure(rare, mass, coast){
+    Treasure(String rare, int type,int mass, int coast){
         this.rare = rare;
+        this.typeTreasure = typesTreas[type];
         this.mass = mass;
         this.coast = coast;
     }
@@ -34,10 +35,10 @@ public class Treasure implements Serializable{
     }
 
 
-    public String[] getTypeTreasure() {
+    public String getTypeTreasure() {
         return typeTreasure;
     }
-    public void setTypeTreasure(String[] typeTreasure) {
+    public void setTypeTreasure(String typeTreasure) {
         this.typeTreasure = typeTreasure;
     }
 
