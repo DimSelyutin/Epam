@@ -37,14 +37,6 @@ public class Building implements Serializable{
     }
 
 
-    public void addFlat(Flat flat){
-        flat.add(flat);
-    }
-
-    public void removeFlat(Flat flat){
-        flat.remove(flat);
-    }
-
     @Override
     public boolean equals(Object obj) {
         // TODO Auto-generated method stub
