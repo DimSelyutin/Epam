@@ -29,11 +29,11 @@ public class Building implements Serializable{
 
     public List<Flat> createFlat() throws IOException{
         int objamiunt = 15;
-        List<Flat> flat = new ArrayList<>();
+        // List<Flat> flat = new ArrayList<>();
         for (int i = 0; i < objamiunt; i++) {
-            flat.add(new Flat());
+            flats.add(new Flat());
         }
-        return flat;
+        return flats;
     }
 
 
