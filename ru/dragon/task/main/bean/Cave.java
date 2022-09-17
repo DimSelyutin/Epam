@@ -8,10 +8,9 @@ import ru.dragon.task.main.logic.GenerateTreasure;
 
 public class Cave implements Serializable{
     private List<Treasure> treasures = new ArrayList<>();
-
-    Cave(int num){
+    public Cave(int num){
         for (int i = 0; i < num; i++) {
-            // treasures.add(new GenerateTreasure());
+            treasures.addAll(new GenerateTreasure().generate());
         }
     }
     
