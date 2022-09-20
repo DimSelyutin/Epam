@@ -11,6 +11,8 @@ public class GetTreasure implements Command {
     public GetTreasure(Cave treasure){
         this.treasure = treasure;
     }
+
+    
     /* (non-Javadoc)
      * @see ru.dragon.task.main.logic.Command#execute()
      */

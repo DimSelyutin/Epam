@@ -13,13 +13,13 @@ import ru.dragon.task.main.view.Present;
 
 public class Main implements Serializable{
     public static void main(String[] args) {
-       Cave cv = new Cave(1);
+        Cave cv = new Cave(6);
+            
+        Command setTreasures = new GetTreasure(cv);
 
-       Command setTreasures = new GetTreasure(cv);
+        Present see = new Present(setTreasures);
 
-       Present see = new Present(setTreasures);
-
-       see.getTreasure();
+        see.getTreasure();
     }
 
 

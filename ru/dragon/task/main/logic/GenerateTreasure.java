@@ -21,11 +21,16 @@ public class GenerateTreasure implements Serializable {
 
 
     public Treasure getNewTreasure() {
+
         return newTreasure;
+
     }
 
+
     public GenerateTreasure(){
-        generate();
+
+        generate();                                                                             //метод генерации сокровища
+
     }
 
     private Treasure generate(){
