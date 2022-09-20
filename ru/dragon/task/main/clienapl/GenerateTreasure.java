@@ -1,4 +1,4 @@
-package ru.dragon.task.clienapl;
+package ru.dragon.task.main.clienapl;
 
 import java.io.IOException;
 import java.io.Serializable;

@@ -6,11 +6,13 @@ public class Present {
    private Command getTreasureFromCave;
 
    public Present(Command getTreasureFromCave){
-    this.getTreasureFromCave = getTreasureFromCave;
+
+        this.getTreasureFromCave = getTreasureFromCave;
+        
    }
 
    public void getTreasure(){
-    getTreasureFromCave.execute();
+        getTreasureFromCave.execute();
    }
 
 }
