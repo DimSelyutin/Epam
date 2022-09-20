@@ -1,10 +1,11 @@
 package ru.dragon.task.main;
 
 import java.io.Serializable;
-import java.util.List;
+
 
 import ru.dragon.task.main.bean.Cave;
 import ru.dragon.task.main.bean.Treasure;
+
 
 
 public class Main implements Serializable{
@@ -15,4 +16,7 @@ public class Main implements Serializable{
             System.out.println(f.getTreasureName()+"\t | \t"+f.getRare());
         }
     }
+
+    // List <Treasure> = new GenerateTreasure();
+
 }

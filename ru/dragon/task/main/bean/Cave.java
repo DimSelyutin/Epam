@@ -10,7 +10,9 @@ public class Cave implements Serializable{
     private List<Treasure> treasures = new ArrayList<>();
     public Cave(int num){
         for (int i = 0; i < num; i++) {
-            treasures.addAll(new GenerateTreasure().generate());
+            new GenerateTreasure();
+            treasures.addAll(new GenerateTreasure().getNewTreasure());
+
         }
     }
     

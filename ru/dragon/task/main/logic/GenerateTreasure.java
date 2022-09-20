@@ -21,13 +21,16 @@ public class GenerateTreasure implements Serializable {
     private List<Treasure> newTreasure = new ArrayList<>();
 
 
+    public List<Treasure> getNewTreasure() {
+        return newTreasure;
+    }
+
     public String getTrPath() {
         return trPath;
     }
 
     public GenerateTreasure(){
         generate();
-        
     }
 
     public List<Treasure> generate(){
