@@ -4,8 +4,7 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
+
 import java.util.Random;
 
 import ru.dragon.task.main.bean.Treasure;
@@ -16,24 +15,20 @@ public class GenerateTreasure implements Serializable {
      *  trPath, itemsArr 
      */
     private String trPath = "E:/GitHub/Epam/Epam-1/ru/dragon/task/main/logic/treasures.txt";
-    private int[] itemsArr = {0,30, 60,80,85,86,88};
+    private int[] itemsArr = {0,30,60,80,85,86,88};
     
-    private List<Treasure> newTreasure = new ArrayList<>();
+    private Treasure newTreasure;
 
 
-    public List<Treasure> getNewTreasure() {
+    public Treasure getNewTreasure() {
         return newTreasure;
-    }
-
-    public String getTrPath() {
-        return trPath;
     }
 
     public GenerateTreasure(){
         generate();
     }
 
-    public List<Treasure> generate(){
+    private Treasure generate(){
 
         Random rand = new Random();
         int randName = 0;
@@ -65,7 +60,7 @@ public class GenerateTreasure implements Serializable {
 
             //инициализация обьекта
             try {
-              newTreasure.add(new Treasure(Files.readAllLines(Paths.get(trPath)).get(randName),
+              newTreasure = (new Treasure(Files.readAllLines(Paths.get(trPath)).get(randName),
                             rand.nextInt(0,3),
                             randTreasure, 
                             rand.nextFloat(1,10), 

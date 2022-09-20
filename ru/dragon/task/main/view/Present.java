@@ -1,15 +1,16 @@
 package ru.dragon.task.main.view;
 
+import ru.dragon.task.main.logic.Command;
+
 public class Present {
-    public static void main(String[] args) {
-        String str = "I like ";
-        System.out.println("Before: " + str);
-        changeString(str);
-        System.out.println("After: " + str);
-        }
-        public static void changeString(String s) {
-        System.out.println(" - before change: " + s);
-        s = s + " Java.";
-        System.out.println(" - after change: " + s);
-        }
+   private Command getTreasureFromCave;
+
+   public Present(Command getTreasureFromCave){
+    this.getTreasureFromCave = getTreasureFromCave;
+   }
+
+   public void getTreasure(){
+    getTreasureFromCave.execute();
+   }
+
 }

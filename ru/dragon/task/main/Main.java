@@ -4,19 +4,23 @@ import java.io.Serializable;
 
 
 import ru.dragon.task.main.bean.Cave;
-import ru.dragon.task.main.bean.Treasure;
+
+import ru.dragon.task.main.logic.Command;
+import ru.dragon.task.main.logic.GetTreasure;
+import ru.dragon.task.main.view.Present;
 
 
 
 public class Main implements Serializable{
     public static void main(String[] args) {
-        Cave cv = new Cave(5);
-        
-        for (Treasure f : cv.getTreasures()) {
-            System.out.println(f.getTreasureName()+"\t | \t"+f.getRare());
-        }
+       Cave cv = new Cave(1);
+
+       Command setTreasures = new GetTreasure(cv);
+
+       Present see = new Present(setTreasures);
+
+       see.getTreasure();
     }
 
-    // List <Treasure> = new GenerateTreasure();
 
 }
