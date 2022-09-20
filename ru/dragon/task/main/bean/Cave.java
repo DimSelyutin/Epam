@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import ru.dragon.task.main.clienapl.GenerateTreasure;
+import ru.dragon.task.main.clienaplication.GenerateTreasure;
 
 public class Cave implements Serializable{
     private List<Treasure> treasures = new ArrayList<>();
