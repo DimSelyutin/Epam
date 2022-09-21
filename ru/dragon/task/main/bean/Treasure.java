@@ -1,6 +1,7 @@
 package ru.dragon.task.main.bean;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 
 public class Treasure implements Serializable{
@@ -14,10 +15,9 @@ public class Treasure implements Serializable{
     private String typeTreasure;
     private float mass;
     private int coast;
-    
-    
-    
-    Treasure(){
+
+
+    public Treasure(){
         this.treasureName = "Treasure Name";
         this.rare = rareArr[0];
         this.typeTreasure = treasureArr[0];
@@ -77,18 +77,22 @@ public class Treasure implements Serializable{
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Treasure{ Name: "+treasureName+", Rare: "+ rare+", Treasure Type: "+typeTreasure+", Weight: "+mass+", Coast: "+coast;
     }
 
     @Override
     public int hashCode() {
-        
-        return super.hashCode();
+        return Objects.hash(treasureName, rare, typeTreasure,mass,coast);
     }
 
     @Override
     public boolean equals(Object obj) {
         
-        return super.equals(obj);
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Treasure treasure = (Treasure) obj;
+        return Objects.equals(treasureName, treasure.treasureName) &&Objects.equals(rare, treasure.rare) && Objects.equals(typeTreasure, treasure.typeTreasure) && 
+        mass == treasure.mass && coast
+         == treasure.coast;
     }
 }

@@ -16,8 +16,6 @@ public class Main implements Serializable{
 
         Present see = new Present(setTreasures);
 
-        see.getTreasure();
     }
-
-
+ 
 }
