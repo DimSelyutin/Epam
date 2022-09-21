@@ -1,33 +1,33 @@
 -----------------------------------Armore---------------------------
 Adamantite Armor
 Demonic Armor
-Armor              
+Armor
 Quick Removal Armor
 Dragon Scale Armor
 Snake Scale Armor
 Sailor's Armor
 Invulnerability Armor
-The Armor Battle                
-Armor of Resistance             
+The Armor Battle
+Armor of Resistance
 Armor of Vulnerability
-Dragon Guardian                 
-Smoking Armor                  
-Living Armor                  
-Human Shield                  
-Ifrit Chain Mail                  
+Dragon Guardian
+Smoking Armor
+Living Armor
+Human Shield
+Ifrit Chain Mail
 Beautiful riveted armor
 The Plate Armor of Ethereality
-Dwarven Armor                    
+Dwarven Armor
 The arrow-catching shield
-Mizzium Armor                   
-Mithril Chain Vanaka              
+Mizzium Armor
+Mithril Chain Vanaka
 Mithril semi - payments
-Mithral Armor              
+Mithral Armor
 Obsidian-Silicon Dragon Armor
-Hunting Coat              
+Hunting Coat
 The Shell Armor of the Mind
 Molten bronze skin
-Rubidium Armor              
+Rubidium Armor
 --------------------------------------Rings---------------------------------
 The ring of influence on animals
 The Ring of Temporary Salvation

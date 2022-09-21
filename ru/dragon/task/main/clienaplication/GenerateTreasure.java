@@ -13,7 +13,7 @@ public class GenerateTreasure implements Serializable {
     /**
      *  trPath, itemsArr may be helper :) 
      */
-    private String trPath = "E:/GitHub/Epam/Epam-1/ru/dragon/task/main/logic/treasures.txt";
+    private String trPath = "E:/GitHub/Epam/Epam-1/ru/dragon/task/main/clienaplication/treasures.txt";
     private int[] itemsArr = {0,30,60,80,85,86,88};
     
 
@@ -46,7 +46,7 @@ public class GenerateTreasure implements Serializable {
                 randName = rand.nextInt(1,89);
                 for (int j : itemsArr) {
                     if (randName == j) {
-                        x = true;
+                        x = false;
                     }
                 }
             }
