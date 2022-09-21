@@ -10,13 +10,15 @@ import java.util.Random;
 import ru.dragon.task.main.bean.Treasure;
 
 public class GenerateTreasure implements Serializable {
-
     /**
-     *  trPath, itemsArr 
+     *  trPath, itemsArr may be helper :) 
      */
     private String trPath = "E:/GitHub/Epam/Epam-1/ru/dragon/task/main/logic/treasures.txt";
     private int[] itemsArr = {0,30,60,80,85,86,88};
     
+
+
+
     private Treasure newTreasure;
 
 
@@ -28,9 +30,7 @@ public class GenerateTreasure implements Serializable {
 
 
     public GenerateTreasure(){
-
         generate();                                                                             //метод генерации сокровища
-
     }
 
     private Treasure generate(){
@@ -38,6 +38,7 @@ public class GenerateTreasure implements Serializable {
         Random rand = new Random();
         int randName = 0;
         int randTreasure = 0;
+
             //корректировка под БД
             boolean x = true;
             while (x) {
@@ -74,6 +75,7 @@ public class GenerateTreasure implements Serializable {
                 System.out.println("Database Error!");
                 e.printStackTrace();
             }
+
         return newTreasure;
     }
 

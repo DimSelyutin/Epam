@@ -3,14 +3,19 @@ package ru.dragon.task.main.bean;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 import ru.dragon.task.main.clienaplication.GenerateTreasure;
 
 public class Cave implements Serializable{
-    private List<Treasure> treasures = new ArrayList<>();
+    private List<Treasure> treasures = new ArrayList<Treasure>();
+
+    public Cave(){
+
+    }
+
     public Cave(int num){
         for (int i = 0; i < num; i++) {
-            // new GenerateTreasure();
             treasures.add(new GenerateTreasure().getNewTreasure());
 
         }
@@ -26,19 +31,21 @@ public class Cave implements Serializable{
 
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
-        return super.toString();
+        
+        return "ListTreasure{"+ treasures+"}";
     }
 
     @Override
     public boolean equals(Object obj) {
-        // TODO Auto-generated method stub
-        return super.equals(obj);
+        if (this==obj)return true;        
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Cave cave = (Cave) obj;
+        return Objects.equals(treasures, cave.treasures);
     }
 
     @Override
     public int hashCode() {
-        // TODO Auto-generated method stub
-        return super.hashCode();
+        
+        return Objects.hash(treasures);
     }
 }
