@@ -2,8 +2,7 @@ package ru.dragon.task.main.main;
 
 import java.io.Serializable;
 import ru.dragon.task.main.bean.Cave;
-import ru.dragon.task.main.logic.Command;
-import ru.dragon.task.main.logic.GetTreasure;
+
 
 
 
