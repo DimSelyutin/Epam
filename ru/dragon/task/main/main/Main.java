@@ -4,7 +4,6 @@ import java.io.Serializable;
 import java.util.Scanner;
 
 import ru.dragon.task.main.bean.Cave;
-import ru.dragon.task.main.bean.Treasure;
 import ru.dragon.task.main.logic.CaveLogic;
 import ru.dragon.task.main.view.Present;
 
