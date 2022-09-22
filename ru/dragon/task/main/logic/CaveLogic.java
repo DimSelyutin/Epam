@@ -54,7 +54,7 @@ public class CaveLogic implements Serializable{
     public List<Treasure> selfCoastTreasure(List<Treasure> treasures, int coast){
 
         List<Treasure> treasureOfCoast = new ArrayList<>();
-
+        
         for (int i = 1; i < treasures.size(); i++) {
             if (treasures.get(i).getCoast() >= coast) {
                 treasureOfCoast.add(treasures.get(i));
@@ -63,6 +63,10 @@ public class CaveLogic implements Serializable{
 
         return treasureOfCoast;
         
+    }
+
+    public static CaveLogic getInstance() {
+        return null;
     }
 
 
