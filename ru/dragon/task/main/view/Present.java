@@ -25,5 +25,6 @@ public class Present {
                System.out.printf("|%1s|%30s|%20s|%n",treasure.getTreasureName(),treasure.getTypeTreasure(),treasure.getCoast()+" coins");
           }
      }
+    
 
 }
