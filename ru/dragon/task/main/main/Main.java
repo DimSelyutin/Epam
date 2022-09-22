@@ -35,7 +35,7 @@ public class Main implements Serializable{
             case 3: 
                 System.out.println("Enter coast of treasure:");
                 int coast = sc.nextInt();
-                print.viewTreasure(cLogic.mostPreciusTreasure(cv.getCave(),coast));
+                print.viewTreasure(cLogic.selfCoastTreasure(cv.getCave(),coast));
                 break;
             default:
                 break;
