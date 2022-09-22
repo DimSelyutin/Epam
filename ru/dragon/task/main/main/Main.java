@@ -28,9 +28,15 @@ public class Main implements Serializable{
 
             case 1:
                 print.viewTreasure(cLogic.allTreasure(cv.getCave()));
-                
                 break;
-        
+            case 2:
+                print.viewTreasure(cLogic.mostPreciusTreasure(cv.getCave()));
+                break;
+            case 3: 
+                System.out.println("Enter coast of treasure:");
+                int coast = sc.nextInt();
+                print.viewTreasure(cLogic.mostPreciusTreasure(cv.getCave(),coast));
+                break;
             default:
                 break;
         }

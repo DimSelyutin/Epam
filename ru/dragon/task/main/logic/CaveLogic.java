@@ -1,7 +1,8 @@
 package ru.dragon.task.main.logic;
 
 import java.io.Serializable;
-
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
@@ -28,5 +29,35 @@ public class CaveLogic implements Serializable{
         
         treasureByName.addAll(treasure);
         return treasureByName;
+    }
+
+
+    public Treasure mostPreciusTreasure(List<Treasure> treasures){
+        int indexMax = 0;
+        for (int i = 1; i < treasures.size(); i++) {
+            if (treasures.get(indexMax).getCoast()<treasures.get(i).getCoast()) {
+                indexMax = i;
+            }
+        }
+        return treasures.get(indexMax);
+        
+    }
+
+
+    public List<Treasure> mostPreciusTreasure(List<Treasure> treasures, int coast){
+        List<Treasure> treasureOfCoast = new ArrayList<>();
+        for (int i = 1; i < treasures.size(); i++) {
+            if (treasures.get(i).getCoast() >= coast) {
+                treasureOfCoast.add(treasures.get(i));
+            }
+        }
+        return treasureOfCoast;
+        
+    }
+
+
+    public Treasure selfCoastTreasure(){
+        return null;
+
     }
 }
