@@ -5,6 +5,7 @@ import java.util.Objects;
 
 
 public class Treasure implements Serializable{
+    static final long SerialVersionUID = -4862926644813433707L;
     
     private String[] rareArr = {"Common", "Rare", "Epic", "Legendary"};
     private String[] treasureArr = {"Armor",  "Jewel", "Magic-item", "Gold","Egg"};

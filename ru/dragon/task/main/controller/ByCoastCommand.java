@@ -5,16 +5,25 @@ import java.util.List;
 import ru.dragon.task.main.bean.Treasure;
 import ru.dragon.task.main.logic.CaveLogic;
 
-public class TrMostEspensiveCommand implements Command{
-
+public class ByCoastCommand implements Command{
     private CaveLogic thCvLogic;
 
-    public TrMostEspensiveCommand(CaveLogic cvLogic){
+    public ByCoastCommand(CaveLogic cvLogic){
         this.thCvLogic = cvLogic;
     }
 
+    @Override
     public void execute(List<Treasure> tr) {
-        thCvLogic.mostPreciusTreasure(tr);
+        thCvLogic.selfCoastTreasure(tr);
         
     }
+
+    // @Override
+    // public void execute(UserRequest comandName) {
+    //     // TODO Auto-generated method stub
+        
+    // }
+
+
+
 }

@@ -1,89 +1,89 @@
 -----------------------------------Armore---------------------------
-Adamantite Armor
-Demonic Armor
-Armor
-Quick Removal Armor
-Dragon Scale Armor
-Snake Scale Armor
-Sailor's Armor
-Invulnerability Armor
-The Armor Battle
-Armor of Resistance
-Armor of Vulnerability
-Dragon Guardian
-Smoking Armor
-Living Armor
-Human Shield
-Ifrit Chain Mail
-Beautiful riveted armor
-The Plate Armor of Ethereality
-Dwarven Armor
-The arrow-catching shield
-Mizzium Armor
-Mithril Chain Vanaka
-Mithril semi - payments
-Mithral Armor
-Obsidian-Silicon Dragon Armor
-Hunting Coat
-The Shell Armor of the Mind
-Molten bronze skin
-Rubidium Armor
+Adamantite Armor          
+Demonic Armor             
+Armor                     
+Quick Removal Armor       
+Dragon Scale Armor        
+Snake Scale Armor         
+Sailor's Armor            
+Invulnerability Armor     
+The Armor Battle          
+Armor of Resistance       
+Armor of Vulnerability    
+Dragon Guardian           
+Smoking Armor             
+Living Armor              
+Human Shield              
+Ifrit Chain Mail          
+Beautiful riveted armor   
+The Plate Armor           
+Dwarven Armor             
+Arrow-catching shield     
+Mizzium Armor             
+Mithril Chain Vanaka      
+Mithril semi - payments   
+Mithral Armor             
+ObsidianDragon Armor      
+Hunting Coat              
+Armor of the Mind         
+Molten bronze skin        
+Rubidium Armor            
 --------------------------------------Rings---------------------------------
-The ring of influence on animals
-The Ring of Temporary Salvation
+The ring of influence     
+The Ring of Temporary     
 Misting Ring              
-Protection Ring              
-Mind Protection Ring              
-The Ring of Winter              
+Protection Ring           
+Mind Protection Ring      
+The Ring of Winter        
 The Elemental Command Ring
-Ring of Red Rage              
-Invisibility Ring              
-Spell Reflection Ring
-Ring of shooting stars
-Feather Drop Ring              
-Swimming Ring              
-The Ring of Truth              
-Jinn Summoning Ring
+Ring of Red Rage          
+Invisibility Ring         
+Spell Reflection Ring     
+Ring of shooting stars    
+Feather Drop Ring         
+Swimming Ring             
+The Ring of Truth         
+Jinn Summoning Ring       
 Ring of penetrating vision
-The Jumping Ring              
-Regeneration Ring              
-Ring of free actions
-Resistance Ring              
-Ring Machines              
+The Jumping Ring          
+Regeneration Ring         
+Ring of free actions      
+Resistance Ring           
+Ring Machines             
 The ram Ring              
-The Ring of Telekinesis
-Heat Ring              
-The Ring of Three Wishes
-The Evasion Ring              
-The ring of walking on water
-Spell Storage Ring           
-Ring of Magic              
+The Ring of Telekinesis   
+Heat Ring                 
+The Ring of Three Wishes  
+The Evasion Ring          
+The ring walking on water 
+Spell Storage Ring        
+Ring of Magic             
 ----------------------------------Magic-Items----------------------
-The Magic Wand of Shells    
-The Magic Wand of Fear      
-The Magic Wand of Miracles  
-Conductor's baton          
-The Rod of Vigilance        
-Safety Rod                 
-The Rod of majestic Power
-The Rod of Retribution     
-Rod of viscous balls    
+The Magic Wand of Shells  
+The Magic Wand of Fear    
+The Magic Wand of Miracles
+Conductor's baton         
+The Rod of Vigilance      
+Safety Rod                
+The Rod of majestic Power 
+The Rod of Retribution    
+Rod of viscous balls      
 The Rod of Absorption     
 The Rod of Government     
-The Netheril Azumara Scroll
-The Motionless rod         
-Burnt Magic Wand Shells    
-A stick of pyrotechnics    
-The wand of frowns         
-Spell Scroll                
-Scroll of Protection        
-The Comet Scroll           
+The Netheril Azumara Scrol
+The Motionless rod        
+Burnt Magic Wand Shells   
+A stick of pyrotechnics   
+The wand of frowns        
+Spell Scroll              
+Scroll of Protection      
+The Comet Scroll          
 -----------------------------------Stones--------------------------
-Diamond                    
-Saphfir                      
+Diamond                   
+Saphfir                   
 Radiant
-Emirald                       
+Emirald                   
 ---------------------------------Gold-------------------------------
-Bag of gold              
+Bag of gold               
 --------------------------------Egg---------------------------------
 Egg of dragon              

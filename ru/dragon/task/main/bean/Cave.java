@@ -8,6 +8,7 @@ import java.util.Objects;
 import ru.dragon.task.main.clienaplication.GenerateTreasure;
 
 public class Cave implements Serializable{
+    static final long SerialVersionUID = -4862926644813433707L;
     private List<Treasure> cave = new ArrayList<Treasure>();
 
     
@@ -29,6 +30,7 @@ public class Cave implements Serializable{
     public List<Treasure> getCave() {
         return cave;
     }
+    
     public void setCave(List<Treasure> cave) {
         this.cave = cave;
     }
@@ -54,8 +56,8 @@ public class Cave implements Serializable{
     public boolean equals(Object obj) {
         if (this==obj)return true;        
         if (obj == null || getClass() != obj.getClass()) return false;
-        Cave cave = (Cave) obj;
-        return Objects.equals(cave, cave.cave);
+        Cave cv = (Cave) obj;
+        return Objects.equals(cave, cv.cave);
     }
 
     @Override
