@@ -39,7 +39,6 @@ public class CaveLogic implements Serializable{
         int indexMax = 0;
 
         for (int i = 1; i < treasures.size(); i++) {
-
             if (treasures.get(indexMax).getCoast()<treasures.get(i).getCoast()) {
                 indexMax = i;
             }

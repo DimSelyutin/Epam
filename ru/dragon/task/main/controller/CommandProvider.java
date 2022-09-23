@@ -4,6 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 import ru.dragon.task.main.command.Command;
 import ru.dragon.task.main.command.CommandName;
+import ru.dragon.task.main.controller.impl.AllTreasureCommand;
+import ru.dragon.task.main.controller.impl.ByCoastCommand;
+import ru.dragon.task.main.controller.impl.MostEspensiveCommand;
+import ru.dragon.task.main.controller.impl.NoSuchCommand;
 
 public class CommandProvider {
     private Map<CommandName, Command> cmds = new HashMap<>();

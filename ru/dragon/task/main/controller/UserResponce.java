@@ -6,6 +6,7 @@ import ru.dragon.task.main.bean.Treasure;
 
 public class UserResponce {
     private List<Treasure> listTreasure;
+
     private String comandName;
     
     
@@ -27,10 +28,12 @@ public class UserResponce {
         return listTreasure;
     }
     
+    
     public void setListTreasure(List<Treasure> listTreasure) {
         this.listTreasure = listTreasure;
     }
-    
+
+
     public String getComandName() {
         return comandName;
     }

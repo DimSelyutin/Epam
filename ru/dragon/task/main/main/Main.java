@@ -10,7 +10,7 @@ public class Main {
         ConsoleOutPut out = new ConsoleOutPut();
         CaveController caveC = new CaveController();
 
-        UserRequest request = new UserRequest("MOST_ESPENSIVE", 400);
+        UserRequest request = new UserRequest("BY_COAST");
 
         UserResponce responce = new UserResponce();
 

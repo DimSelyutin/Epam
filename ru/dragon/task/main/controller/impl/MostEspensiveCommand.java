@@ -1,18 +1,19 @@
-package ru.dragon.task.main.controller;
-
-
-
+package ru.dragon.task.main.controller.impl;
 
 import java.util.List;
-
 import ru.dragon.task.main.bean.Treasure;
 import ru.dragon.task.main.command.Command;
 import ru.dragon.task.main.command.CommandName;
+import ru.dragon.task.main.controller.UserRequest;
+import ru.dragon.task.main.controller.UserResponce;
 import ru.dragon.task.main.dto.CartOfTreasure;
 import ru.dragon.task.main.logic.CaveLogic;
 
-public class ByCoastCommand implements Command{
+
+
+public class MostEspensiveCommand implements Command{
     private final CaveLogic cv = CaveLogic.getInstance();
+
 
     @Override
     public UserResponce execute(UserRequest request) {
@@ -23,19 +24,12 @@ public class ByCoastCommand implements Command{
 
 
 
-        int coast = request.getCoast();
-        List<Treasure> treasure3 = cv.selfCoastTreasure(cot.getCave(), coast);
-        responce.setComandName(cmdName.BY_COAST.toString());
-
-        responce.setListTreasure(treasure3);
+        Treasure treasure = cv.mostPreciusTreasure(cot.getCave());
+                responce.setComandName(cmdName.ALL.toString());
+                responce.setTreasure( treasure);
         return responce;
     }
     
+
     
-
-
-
-
-
-
 }

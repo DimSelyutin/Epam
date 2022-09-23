@@ -1,38 +1,43 @@
-package ru.dragon.task.main.controller;
+package ru.dragon.task.main.controller.impl;
+
+
+
 
 import java.util.List;
 
 import ru.dragon.task.main.bean.Treasure;
 import ru.dragon.task.main.command.Command;
 import ru.dragon.task.main.command.CommandName;
+import ru.dragon.task.main.controller.UserRequest;
+import ru.dragon.task.main.controller.UserResponce;
 import ru.dragon.task.main.dto.CartOfTreasure;
 import ru.dragon.task.main.logic.CaveLogic;
 
-
-public class AllTreasureCommand implements Command {
+public class ByCoastCommand implements Command{
     private final CaveLogic cv = CaveLogic.getInstance();
 
     @Override
     public UserResponce execute(UserRequest request) {
         String cmd = request.getCommandName();
         UserResponce responce = new UserResponce();
-
-        CartOfTreasure cot = new CartOfTreasure();      //
+        CartOfTreasure cot = new CartOfTreasure();
         CommandName cmdName = CommandName.valueOf(cmd);
 
-        List<Treasure> treasure = cv.allTreasure(CartOfTreasure.getCave());
-        responce.setComandName(cmdName.ALL.toString());
-        responce.setListTreasure((List<Treasure>) treasure);
-        
+
+
+        int coast = request.getCoast();
+        List<Treasure> treasure3 = cv.selfCoastTreasure(cot.getCave(), coast);
+        responce.setComandName(cmdName.BY_COAST.toString());
+
+        responce.setListTreasure(treasure3);
         return responce;
     }
-
+    
     
 
 
-   
 
-   
 
-    
+
+
 }

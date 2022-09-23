@@ -23,7 +23,7 @@ public class Treasure implements Serializable{
         this.rare = rareArr[0];
         this.typeTreasure = treasureArr[0];
         this.mass = 1;
-        this.coast = 10;
+        this.coast = 1;
     }
 
 

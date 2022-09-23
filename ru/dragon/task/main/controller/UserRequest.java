@@ -9,7 +9,7 @@ public class UserRequest {
         this.commandName = comandName;
     }
     
-    UserRequest(String comandName, int coast){
+    public UserRequest(String comandName, int coast){
         this.commandName = comandName;
         this.coast = coast;
     }
