@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-import ru.dragon.task.main.clienaplication.GenerateTreasure;
+import ru.dragon.task.main.clientaplication.GenerateTreasure;
 
 public class Cave implements Serializable{
     static final long SerialVersionUID = -4862926644813433707L;

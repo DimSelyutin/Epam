@@ -1,8 +1,9 @@
 package ru.dragon.task.main.controller;
 
-import java.util.List;
 
-import ru.dragon.task.main.bean.Treasure;
+
+
+import ru.dragon.task.main.command.Command;
 import ru.dragon.task.main.logic.CaveLogic;
 
 public class ByCoastCommand implements Command{
@@ -12,17 +13,14 @@ public class ByCoastCommand implements Command{
         this.thCvLogic = cvLogic;
     }
 
-    // @Override
-    // public void execute(List<Treasure> tr) {
-    //     thCvLogic.selfCoastTreasure(tr);
-        
-    // }
-
     @Override
-    public void execute(UserRequest comandName) {
-       
+    public void execute(UserRequest request) {
+        // TODO Auto-generated method stub
         
     }
+
+
+
 
 
 

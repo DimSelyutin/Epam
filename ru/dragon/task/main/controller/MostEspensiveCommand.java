@@ -3,6 +3,7 @@ package ru.dragon.task.main.controller;
 import java.util.List;
 
 import ru.dragon.task.main.bean.Treasure;
+import ru.dragon.task.main.command.Command;
 import ru.dragon.task.main.logic.CaveLogic;
 
 public class MostEspensiveCommand implements Command{

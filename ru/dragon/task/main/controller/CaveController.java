@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Set;
 
 import ru.dragon.task.main.bean.Treasure;
+import ru.dragon.task.main.command.CommandName;
 import ru.dragon.task.main.dto.CartOfTreasure;
 import ru.dragon.task.main.logic.CaveLogic;
 
@@ -19,7 +20,7 @@ public class CaveController {
         UserResponce responce = null;
         switch (cmdName) {
             case ALL:
-                Set<Treasure> treasure = cv.allTreasure(cot.getCave());
+                List<Treasure> treasure = cv.allTreasure(cot.getCave());
                 responce.setComandName(cmdName.ALL.toString());
                 responce.setListTreasure((List<Treasure>) treasure);
                 break;
