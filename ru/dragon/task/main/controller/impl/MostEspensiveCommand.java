@@ -24,8 +24,8 @@ public class MostEspensiveCommand implements Command{
 
 
 
-        Treasure treasure = cv.mostPreciusTreasure(cot.getCave());
-                responce.setComandName(cmdName.ALL.toString());
+        Treasure treasure = cv.mostPreciusTreasure(cot.getCAVE());
+                responce.setComandName(cmdName.MOST_ESPENSIVE.toString());
                 responce.setTreasure( treasure);
         return responce;
     }

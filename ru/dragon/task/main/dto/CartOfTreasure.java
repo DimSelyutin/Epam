@@ -6,15 +6,20 @@ import ru.dragon.task.main.bean.Cave;
 import ru.dragon.task.main.bean.Treasure;
 
 
+
 public class CartOfTreasure {
-    public static Cave cave = new Cave(10);
+    public static Cave CAVE = new Cave(100);
     
-    public CartOfTreasure() {
-        
+    public List<Treasure> getCAVE() {
+        return CAVE.getCave();
     }
 
-    public static List<Treasure> getCave(){
-        
-        return cave.getCave();
+    public static void setCAVE(Cave cAVE) {
+        CAVE = cAVE;
     }
+
+    public CartOfTreasure() {
+       
+    }
+
 }

@@ -22,7 +22,6 @@ public class Main {
             case 1:
                 UserRequest request = new UserRequest("ALL",600);
                 out.printTreasure(caveC.doAction(request));
-
                 break;
 
             case 2:
@@ -40,6 +39,8 @@ public class Main {
                 out.printTreasure(caveC.doAction(request));
                 break;
             default:
+                request = new UserRequest("");
+                out.printTreasure(caveC.doAction(request));
             break;
         }
         

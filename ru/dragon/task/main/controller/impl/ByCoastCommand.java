@@ -27,7 +27,7 @@ public class ByCoastCommand implements Command{
 
 
 
-        List<Treasure> treasure3 = cv.selfCoastTreasure(cot.getCave(), coast);
+        List<Treasure> treasure3 = cv.selfCoastTreasure(cot.getCAVE(), coast);
         responce.setComandName(cmdName.BY_COAST.toString());
         
 

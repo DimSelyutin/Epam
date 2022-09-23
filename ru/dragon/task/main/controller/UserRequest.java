@@ -10,6 +10,7 @@ public class UserRequest {
     }
     
     public UserRequest(String comandName, int coast){
+    
         this.commandName = comandName;
         this.coast = coast;
     }
@@ -23,9 +24,12 @@ public class UserRequest {
         this.commandName = commandName;
     }
  
+
+    
     public int getCoast() {
         return coast;
     }
+
     public void setCoast(int coast) {
         this.coast = coast;
     }

@@ -22,7 +22,7 @@ public class AllTreasureCommand implements Command {
         CartOfTreasure cot = new CartOfTreasure();      //
         CommandName cmdName = CommandName.valueOf(cmd);
 
-        List<Treasure> treasure = cv.allTreasure(CartOfTreasure.getCave());
+        List<Treasure> treasure = cv.allTreasure(cot.getCAVE());
         responce.setComandName(cmdName.ALL.toString());
         responce.setListTreasure((List<Treasure>) treasure);
         

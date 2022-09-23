@@ -9,8 +9,10 @@ public class NoSuchCommand implements Command {
     @Override
     public UserResponce execute(UserRequest request) {
         String cmd = request.getCommandName();
-        UserResponce responce = null;
+        UserResponce responce = new UserResponce();
+
         CommandName cmdName = CommandName.valueOf(cmd);
+        responce.setMessage("No such command, pls try again letter!");
         responce.setMessage(cmdName.NO_SUCH_COMMAND.toString());
 
         return responce;
