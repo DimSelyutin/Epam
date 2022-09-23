@@ -5,17 +5,16 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.Set;
 
-import java.util.TreeSet;
 
 import ru.dragon.task.main.bean.Treasure;
 
 public class CaveLogic implements Serializable{
     static final long SerialVersionUID = -4862926644813433707L;
 
+    private static CaveLogic INSTANCE;
 
-    public CaveLogic(){
+    private CaveLogic(){
 
     }
 
@@ -66,6 +65,9 @@ public class CaveLogic implements Serializable{
     }
 
     public static CaveLogic getInstance() {
+        if(INSTANCE == null){
+            INSTANCE = new CaveLogic();
+        }
         return null;
     }
 

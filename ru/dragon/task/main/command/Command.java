@@ -1,7 +1,10 @@
 package ru.dragon.task.main.command;
 
 import ru.dragon.task.main.controller.UserRequest;
+import ru.dragon.task.main.controller.UserResponce;
 
 public interface Command {
-    void execute(UserRequest request);
+    UserResponce execute(UserRequest request);
+
+    
 }

@@ -1,54 +1,17 @@
 package ru.dragon.task.main.controller;
 
-import java.util.List;
-import java.util.Set;
-
-import ru.dragon.task.main.bean.Treasure;
-import ru.dragon.task.main.command.CommandName;
-import ru.dragon.task.main.dto.CartOfTreasure;
-import ru.dragon.task.main.logic.CaveLogic;
+import ru.dragon.task.main.command.Command;
 
 public class CaveController {
+    private final CommandProvider provider = CommandProvider.getInstance();
 
-
-    public UserResponce findAllTreasure(UserRequest request){
-        String cmd = request.getCommandName();
-        CommandName cmdName = CommandName.valueOf(cmd);
-        CaveLogic cv = new CaveLogic();
-        CartOfTreasure cot = CartOfTreasure();
-
-        UserResponce responce = null;
-        switch (cmdName) {
-            case ALL:
-                List<Treasure> treasure = cv.allTreasure(cot.getCave());
-                responce.setComandName(cmdName.ALL.toString());
-                responce.setListTreasure((List<Treasure>) treasure);
-                break;
-
-            case MOST_ESPENSIVE:
-                Treasure treasure2 = cv.mostPreciusTreasure(cot.getCave());
-                responce.setComandName(cmdName.MOST_ESPENSIVE.toString());
-
-                responce.setTreasure(treasure2);
-                break;
-
-            case BY_COAST:
-            int coast = request.getCoast();
-                List<Treasure> treasure3 = cv.selfCoastTreasure(cot.getCave(), coast);
-                responce.setComandName(cmdName.BY_COAST.toString());
-
-                responce.setListTreasure(treasure3);
-                break;
-
+    public UserResponce doAction(UserRequest request){
         
-            default:
-                break;
-        }
+        String cmdName = request.getCommandName();
+        Command cmd = provider.getCommand(cmdName);
 
+        UserResponce responce = cmd.execute(request);
         return responce;
-    }
 
-    private CartOfTreasure CartOfTreasure() {
-        return null;
     }
 }

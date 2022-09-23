@@ -3,21 +3,35 @@ package ru.dragon.task.main.controller;
 
 
 
+import java.util.List;
+
+import ru.dragon.task.main.bean.Treasure;
 import ru.dragon.task.main.command.Command;
+import ru.dragon.task.main.command.CommandName;
+import ru.dragon.task.main.dto.CartOfTreasure;
 import ru.dragon.task.main.logic.CaveLogic;
 
 public class ByCoastCommand implements Command{
-    private CaveLogic thCvLogic;
-
-    public ByCoastCommand(CaveLogic cvLogic){
-        this.thCvLogic = cvLogic;
-    }
+    private final CaveLogic cv = CaveLogic.getInstance();
 
     @Override
-    public void execute(UserRequest request) {
-        // TODO Auto-generated method stub
-        
+    public UserResponce execute(UserRequest request) {
+        String cmd = request.getCommandName();
+        UserResponce responce = new UserResponce();
+        CartOfTreasure cot = new CartOfTreasure();
+        CommandName cmdName = CommandName.valueOf(cmd);
+
+
+
+        int coast = request.getCoast();
+        List<Treasure> treasure3 = cv.selfCoastTreasure(cot.getCave(), coast);
+        responce.setComandName(cmdName.BY_COAST.toString());
+
+        responce.setListTreasure(treasure3);
+        return responce;
     }
+    
+    
 
 
 

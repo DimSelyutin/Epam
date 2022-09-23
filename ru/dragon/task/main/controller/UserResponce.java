@@ -38,4 +38,7 @@ public class UserResponce {
     public void setComandName(String comandName) {
         this.comandName = comandName;
     }
+
+    public void setMessage(String string) {
+    }
 }

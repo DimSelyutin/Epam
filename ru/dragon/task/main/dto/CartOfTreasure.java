@@ -10,7 +10,7 @@ public class CartOfTreasure {
     Cave cave = new Cave(10);
 
     public CartOfTreasure() {
-
+        
     }
 
     public List<Treasure> getCave(){
