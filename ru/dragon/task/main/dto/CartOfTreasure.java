@@ -7,13 +7,13 @@ import ru.dragon.task.main.bean.Treasure;
 
 
 public class CartOfTreasure {
-    Cave cave = new Cave(10);
-
+    public static Cave cave = new Cave(10);
+    
     public CartOfTreasure() {
         
     }
 
-    public List<Treasure> getCave(){
+    public static List<Treasure> getCave(){
         
         return cave.getCave();
     }

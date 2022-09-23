@@ -17,10 +17,10 @@ public class AllTreasureCommand implements Command {
         String cmd = request.getCommandName();
         UserResponce responce = new UserResponce();
 
-        CartOfTreasure cot = new CartOfTreasure().getCave();
+        CartOfTreasure cot = new CartOfTreasure();      //
         CommandName cmdName = CommandName.valueOf(cmd);
 
-        List<Treasure> treasure = cv.allTreasure(cot.getCave());
+        List<Treasure> treasure = cv.allTreasure(CartOfTreasure.getCave());
         responce.setComandName(cmdName.ALL.toString());
         responce.setListTreasure((List<Treasure>) treasure);
         

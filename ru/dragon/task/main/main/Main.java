@@ -10,12 +10,12 @@ public class Main {
         ConsoleOutPut out = new ConsoleOutPut();
         CaveController caveC = new CaveController();
 
-        UserRequest request = new UserRequest("ALL");
+        UserRequest request = new UserRequest("MOST_ESPENSIVE", 400);
 
         UserResponce responce = new UserResponce();
 
-        System.out.println(caveC.doAction(request));
-        // out.printTreasure();
+        
+        out.printTreasure(caveC.doAction(request));
         
     }   
 }

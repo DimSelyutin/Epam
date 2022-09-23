@@ -9,6 +9,8 @@ import ru.dragon.task.main.clientaplication.GenerateTreasure;
 
 public class Cave implements Serializable{
     static final long SerialVersionUID = -4862926644813433707L;
+
+
     private List<Treasure> cave = new ArrayList<Treasure>();
 
     

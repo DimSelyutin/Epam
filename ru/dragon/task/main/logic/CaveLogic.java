@@ -6,11 +6,12 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-
 import ru.dragon.task.main.bean.Treasure;
+import ru.dragon.task.main.dto.CartOfTreasure;
 
 public class CaveLogic implements Serializable{
     static final long SerialVersionUID = -4862926644813433707L;
+    List<Treasure> cave = CartOfTreasure.getCave();
 
     private static CaveLogic INSTANCE;
 
@@ -68,7 +69,7 @@ public class CaveLogic implements Serializable{
         if(INSTANCE == null){
             INSTANCE = new CaveLogic();
         }
-        return null;
+        return INSTANCE;
     }
 
 
