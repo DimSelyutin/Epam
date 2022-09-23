@@ -19,15 +19,17 @@ public class ByCoastCommand implements Command{
     @Override
     public UserResponce execute(UserRequest request) {
         String cmd = request.getCommandName();
+        int coast = request.getCoast();
+        
         UserResponce responce = new UserResponce();
         CartOfTreasure cot = new CartOfTreasure();
         CommandName cmdName = CommandName.valueOf(cmd);
 
 
 
-        int coast = request.getCoast();
         List<Treasure> treasure3 = cv.selfCoastTreasure(cot.getCave(), coast);
         responce.setComandName(cmdName.BY_COAST.toString());
+        
 
         responce.setListTreasure(treasure3);
         return responce;
