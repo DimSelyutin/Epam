@@ -13,10 +13,10 @@ public class MostEspensiveCommand implements Command{
         this.thCvLogic = cvLogic;
     }
 
-    public void execute(List<Treasure> tr) {
-        thCvLogic.mostPreciusTreasure(tr);
+    // public void execute(List<Treasure> tr) {
+    //     thCvLogic.mostPreciusTreasure(tr);
         
-    }
+    // }
 
     @Override
     public void execute(UserRequest comandName) {

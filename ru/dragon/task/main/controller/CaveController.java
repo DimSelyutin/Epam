@@ -8,6 +8,8 @@ import ru.dragon.task.main.dto.CartOfTreasure;
 import ru.dragon.task.main.logic.CaveLogic;
 
 public class CaveController {
+
+
     public UserResponce findAllTreasure(UserRequest request){
         String cmd = request.getCommandName();
         CommandName cmdName = CommandName.valueOf(cmd);
@@ -18,16 +20,22 @@ public class CaveController {
         switch (cmdName) {
             case ALL:
                 Set<Treasure> treasure = cv.allTreasure(cot.getCave());
+                responce.setComandName(cmdName.ALL.toString());
                 responce.setListTreasure((List<Treasure>) treasure);
                 break;
 
             case MOST_ESPENSIVE:
                 Treasure treasure2 = cv.mostPreciusTreasure(cot.getCave());
+                responce.setComandName(cmdName.MOST_ESPENSIVE.toString());
+
                 responce.setTreasure(treasure2);
                 break;
 
             case BY_COAST:
-                List<Treasure> treasure3 = cv.selfCoastTreasure(cot.getCave(), 400);
+            int coast = request.getCoast();
+                List<Treasure> treasure3 = cv.selfCoastTreasure(cot.getCave(), coast);
+                responce.setComandName(cmdName.BY_COAST.toString());
+
                 responce.setListTreasure(treasure3);
                 break;
 
@@ -36,7 +44,7 @@ public class CaveController {
                 break;
         }
 
-        return null;
+        return responce;
     }
 
     private CartOfTreasure CartOfTreasure() {

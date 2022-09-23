@@ -12,17 +12,17 @@ public class ByCoastCommand implements Command{
         this.thCvLogic = cvLogic;
     }
 
-    @Override
-    public void execute(List<Treasure> tr) {
-        thCvLogic.selfCoastTreasure(tr);
-        
-    }
-
     // @Override
-    // public void execute(UserRequest comandName) {
-    //     // TODO Auto-generated method stub
+    // public void execute(List<Treasure> tr) {
+    //     thCvLogic.selfCoastTreasure(tr);
         
     // }
+
+    @Override
+    public void execute(UserRequest comandName) {
+       
+        
+    }
 
 
 

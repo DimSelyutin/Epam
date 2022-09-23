@@ -11,15 +11,14 @@ public class AllTreasureCommand implements Command {
     private CaveLogic cvLogic;
 
 
-    public AllTreasureCommand(CaveLogic cv){
-        this.cvLogic = cv;
-    }
+    // public AllTreasureCommand(CaveLogic cv){
+    //     this.cvLogic = cv;
+    // }
 
 
     @Override
     public void execute(UserRequest comandName) {
-        
-        
+        comandName.getCommandName();
     }
 
 
