@@ -39,7 +39,7 @@ public class Main {
                 out.printTreasure(caveC.doAction(request));
                 break;
             default:
-                request = new UserRequest("");
+                request = new UserRequest("NO_SUCH_COMMAND");
                 out.printTreasure(caveC.doAction(request));
             break;
         }

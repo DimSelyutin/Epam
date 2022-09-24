@@ -18,7 +18,7 @@ public class ConsoleOutPut {
                 Treasure tr = responce.getTreasure();
                 System.out.println(tr.getTreasureName()+"\t"+tr.getRare()+"\t"+tr.getTypeTreasure()+"\t\t"+tr.getCoast());
             } catch (NullPointerException n) {
-                System.out.println(n);
+                System.out.println(responce.getMessage());
             }
         }
 

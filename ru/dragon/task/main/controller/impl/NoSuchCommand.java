@@ -12,8 +12,8 @@ public class NoSuchCommand implements Command {
         UserResponce responce = new UserResponce();
 
         CommandName cmdName = CommandName.valueOf(cmd);
-        responce.setMessage("No such command, pls try again letter!");
-        responce.setMessage(cmdName.NO_SUCH_COMMAND.toString());
+        responce.setMessage("No such command, pls try again latter!");
+        responce.setComandName(cmdName.NO_SUCH_COMMAND.toString());
 
         return responce;
     }
