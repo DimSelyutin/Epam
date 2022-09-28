@@ -93,7 +93,6 @@ public class Treasure implements Serializable{
         if (obj == null || getClass() != obj.getClass()) return false;
         Treasure treasure = (Treasure) obj;
         return Objects.equals(treasureName, treasure.treasureName) &&Objects.equals(rare, treasure.rare) && Objects.equals(typeTreasure, treasure.typeTreasure) && 
-        mass == treasure.mass && coast
-         == treasure.coast;
+        mass == treasure.mass && coast == treasure.coast;
     }
 }
