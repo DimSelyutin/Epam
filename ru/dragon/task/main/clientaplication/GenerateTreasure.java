@@ -10,6 +10,8 @@ import java.util.Random;
 import ru.dragon.task.main.bean.Treasure;
 
 public class GenerateTreasure implements Serializable {
+    
+
     /**
      *  trPath, itemsArr may be helper :) 
      */
@@ -79,6 +81,30 @@ public class GenerateTreasure implements Serializable {
         return newTreasure;
     }
 
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((newTreasure == null) ? 0 : newTreasure.hashCode());
+        return result;
+    }
 
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        GenerateTreasure other = (GenerateTreasure) obj;
+        if (newTreasure == null) {
+            if (other.newTreasure != null)
+                return false;
+        } else if (!newTreasure.equals(other.newTreasure))
+            return false;
+        return true;
+    }
 
 }

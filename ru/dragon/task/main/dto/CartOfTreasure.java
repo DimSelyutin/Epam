@@ -14,8 +14,8 @@ public class CartOfTreasure {
         return CAVE.getCave();
     }
 
-    public static void setCAVE(Cave cAVE) {
-        CAVE = cAVE;
+    public static void setCAVE(Cave cave) {
+        CAVE = cave;
     }
 
     public CartOfTreasure() {

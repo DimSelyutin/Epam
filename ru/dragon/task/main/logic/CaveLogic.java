@@ -13,7 +13,7 @@ public class CaveLogic implements Serializable{
 
     private static CaveLogic INSTANCE;
 
-    private CaveLogic(){
+    public CaveLogic(){
 
     }
 

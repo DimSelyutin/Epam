@@ -1,10 +1,12 @@
 package ru.dragon.task.main.bean;
 
 import java.io.Serializable;
-import java.util.Objects;
+import java.util.Arrays;
 
 
 public class Treasure implements Serializable{
+    
+
     static final long SerialVersionUID = -4862926644813433707L;
     
     private String[] rareArr = {"Common", "Rare", "Epic", "Legendary"};
@@ -75,24 +77,53 @@ public class Treasure implements Serializable{
         this.coast = coast;
     }
 
-
-    @Override
-    public String toString() {
-        return "Treasure{ Name: "+treasureName+", Rare: "+ rare+", Treasure Type: "+typeTreasure+", Weight: "+mass+", Coast: "+coast;
-    }
-
     @Override
     public int hashCode() {
-        return Objects.hash(treasureName, rare, typeTreasure,mass,coast);
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((treasureName == null) ? 0 : treasureName.hashCode());
+        result = prime * result + ((rare == null) ? 0 : rare.hashCode());
+        result = prime * result + ((typeTreasure == null) ? 0 : typeTreasure.hashCode());
+        result = prime * result + Float.floatToIntBits(mass);
+        result = prime * result + coast;
+        return result;
     }
+
 
     @Override
     public boolean equals(Object obj) {
-        
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
-        Treasure treasure = (Treasure) obj;
-        return Objects.equals(treasureName, treasure.treasureName) &&Objects.equals(rare, treasure.rare) && Objects.equals(typeTreasure, treasure.typeTreasure) && 
-        mass == treasure.mass && coast == treasure.coast;
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Treasure other = (Treasure) obj;
+        if (treasureName == null) {
+            if (other.treasureName != null)
+                return false;
+        } else if (!treasureName.equals(other.treasureName))
+            return false;
+        if (rare == null) {
+            if (other.rare != null)
+                return false;
+        } else if (!rare.equals(other.rare))
+            return false;
+        if (typeTreasure == null) {
+            if (other.typeTreasure != null)
+                return false;
+        } else if (!typeTreasure.equals(other.typeTreasure))
+            return false;
+        if (Float.floatToIntBits(mass) != Float.floatToIntBits(other.mass))
+            return false;
+        if (coast != other.coast)
+            return false;
+        return true;
+    }
+    
+    @Override
+    public String toString() {
+        return "Treasure [treasureName=" + treasureName + ", rare=" + rare + ", typeTreasure=" + typeTreasure
+                + ", mass=" + mass + ", coast=" + coast + "]";
     }
 }
