@@ -13,11 +13,12 @@ public class ConsoleOutPut {
                 System.out.println(tr.getTreasureName()+"\t"+tr.getRare()+"\t"+tr.getTypeTreasure()+"\t\t"+tr.getCoast());
             }
         } catch (Exception e) {
-            try {
+            if (responce.getTreasure() != null && responce.getTreasure().getClass() == Treasure.class) {
                 Treasure tr = responce.getTreasure();
                 System.out.println(tr.getTreasureName()+"\t"+tr.getRare()+"\t"+tr.getTypeTreasure()+"\t\t"+tr.getCoast());
-            } catch (NullPointerException n) {
+            } else {
                 System.out.println(responce.getMessage());
+
             }
         }
 
