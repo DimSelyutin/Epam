@@ -8,19 +8,25 @@ import ru.dragon.task.main.controller.UserResponce;
 
 public class ConsoleOutPut {
     public void printTreasure(UserResponce responce){
-        try {
-            for (Treasure tr : responce.getListTreasure()) {
-                System.out.println(tr.getTreasureName()+"\t"+tr.getRare()+"\t"+tr.getTypeTreasure()+"\t\t"+tr.getCoast());
+        //all and byCoast
+
+            if (responce.getListTreasure() != null) {
+                for (Treasure tr : responce.getListTreasure()) {
+                    System.out.println(tr.getTreasureName()+"\t"+tr.getRare()+"\t"+tr.getTypeTreasure()+"\t\t"+tr.getCoast());
+                }
+            } else {
             }
-        } catch (Exception e) {
-            if (responce.getTreasure() != null && responce.getTreasure().getClass() == Treasure.class) {
+   //most espensive
+            if (responce.getTreasure() != null && responce.getListTreasure() == null) {
                 Treasure tr = responce.getTreasure();
                 System.out.println(tr.getTreasureName()+"\t"+tr.getRare()+"\t"+tr.getTypeTreasure()+"\t\t"+tr.getCoast());
             } else {
                 System.out.println(responce.getMessage());
 
             }
-        }
+        
+
+
 
         
     }
